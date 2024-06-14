@@ -165,6 +165,18 @@ section h2 {
 }
 
 
+
+
+
+
+
+/* CARDES AQUI  */
+
+
+.titulo2 {
+    padding-bottom: 100px;
+}
+
 .card {
     display: inline-block;
     width: 30%;
@@ -173,18 +185,20 @@ section h2 {
     border: 1px solid #FF2978;
     border-radius: 10px;
     cursor: pointer;
-
+    transition: all 0.5s ease;
+    vertical-align: top;
 }
 
 .texto-oculto {
-    display: none;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: opacity 0.5s ease, height 0.5s ease;
 }
-
 
 .card:hover {
     background: #FF2978;
     color: white;
-    padding: 40px;
 }
 
 .card:hover img {
@@ -195,10 +209,18 @@ section h2 {
     display: none;
 }
 
-
 .card:hover .texto-oculto {
-    display: block;
+    opacity: 1;
+    height: auto;
 }
+
+
+/* FIM DOS CARDES AQUI */
+
+
+
+
+
 
 
 footer {
